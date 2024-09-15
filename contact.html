@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INSTITUTE OF MEDICAL SCIENCE - RANIGANJ</title>
+    <link rel="shortcut icon" href="assets/imslogo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/output.css">
 
@@ -75,12 +76,12 @@
                 <div class="mt-6 p-10 md:p-14 shadow-lg py-4 border-2 rounded-xl my-5 md:w-[50%] bg-blue-200">
                     <h2 class="font-extrabold underline -ml-5 mb-5">Quick Contact</h2>
                     <form id="contact-form" class="flex flex-col space-y-4">
-                        <label class="font-semibold md:flex justify-start items-center gap-5" for="">Your Name : <input class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" type="text" placeholder="Your Name" name="name" id="name"  style="width:250px;"/></label>
-                        <label class="font-semibold md:flex justify-start items-center gap-4" for="">Contact No :<input class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" type="number" placeholder="Your Contact No" name="contact" id="number"  style="width:250px;"/></label>
-                        <label class="font-semibold md:flex justify-start items-center gap-10" for="">Email id : <input class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" type="email" placeholder="Your Email" name="email" id="email"  style="width:250px;"/></label>
-                        <label class="font-semibold" for="">Enquiry :<textarea class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" placeholder="Type your question here...." cols="30" rows="5" name="message" id="enquery"></textarea></label>
+                        <label class="font-semibold md:flex justify-start items-center gap-5" for="">Your Name : <input class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" type="text" placeholder="Your Name" name="name" id="name" required/></label>
+                        <label class="font-semibold md:flex justify-start items-center gap-4" for="">Contact No :<input class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" type="number" placeholder="Your Contact No" name="contact" id="number" required/></label>
+                        <label class="font-semibold md:flex justify-start items-center gap-10" for="">Email id : <input class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" type="email" placeholder="Your Email" name="email" id="email" required/></label>
+                        <label class="font-semibold" for="">Enquiry :<textarea class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" placeholder="Type your question here...." cols="30" rows="5" name="message" id="enquery" required></textarea></label>
                
-                        <button type="submit" class="text-center border rounded-xl mx-20 my-3 py-3 bg-green-500 text-white">Submit</button>
+                        <button type="submit" class="text-center border rounded-xl mx-20 my-3 py-3 bg-green-500 text-white min-w-fit">Submit</button>
                         <p id="response" class="text-center"></p>
 
                     </form>
