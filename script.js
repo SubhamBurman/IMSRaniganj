@@ -1,18 +1,3 @@
-const navdialog = document.getElementById("nav-dialog")
-
-function handleMenu(){
-    navdialog.classList.toggle("hidden");
-}
-
-
-var typed = new Typed("#auto-type", {
-  strings: ["	Basic Ayurvedic System of Medicines", "	Diploma in Child Health Care", "	Bachelor in Dental Alternative Science", "Basic Nursing Training", "	Diploma in Female Nursing"],
-  typeSpeed: 50,
-  backSpeed: 50,
-  loop:true
-})
-
-
 // Initialize EmailJS with your public key
 emailjs.init('UJch24NZeaqlgbFGE'); // Replace with your actual public key from EmailJS
 
@@ -32,4 +17,23 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
   
+
+
+
+
+
+const navdialog = document.getElementById("nav-dialog")
+
+function handleMenu(){
+    navdialog.classList.toggle("hidden");
+}
+
+
+var typed = new Typed("#auto-type", {
+  strings: ["	Basic Ayurvedic System of Medicines", "	Diploma in Child Health Care", "	Bachelor in Dental Alternative Science", "Basic Nursing Training", "	Diploma in Female Nursing"],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop:true
+})
+
 
