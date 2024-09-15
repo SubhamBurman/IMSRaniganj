@@ -6,6 +6,7 @@
     <title>INSTITUTE OF MEDICAL SCIENCE - RANIGANJ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/output.css">
+
 </head>
 <body>
       
@@ -55,13 +56,13 @@
       <main>
 
       </main>
-     <h2 class="text-blue-900 font-extrabold text-center mb-6">Institute of medical science affiliated with BMCRC Kolkata</h2>
-     <h2 class="font-extrabold text-3xl pb-4 ">Contact Details :</h2>
+     <h2 class="text-blue-900 font-extrabold text-center my-4">Institute of medical science affiliated with BMCRC Kolkata</h2>
+     <h2 class="font-extrabold text-3xl pb-4 mx-2 md:ml-32">Contact Details :</h2>
 
-            <div class="mx-3 flex flex-col">
-                <div class="md:w-[50%]">
-                    <h2 class="font-bold">Institute of medical science</h2>
-                    <p>
+            <div class="mx-3 flex flex-col md:flex-row md:items-center md:bg-blue-50 md:px-3 md:rounded-xl md:w-[80%] md:mx-auto md:mb-8">
+                <div class="mx-2 md:w-[50%] ">
+                    <h2 class="font-bold md:text-3xl">Institute of medical science</h2>
+                    <p class="md:text-2xl">
                       41/2 N.S.B Road, Raniganj<br />
                       Near TARBANGLOW<br />
                        Dist: Burdwan , West Bengal<br />
@@ -71,15 +72,17 @@
                     </p>
                 </div>
     
-                <div class="mt-6 px-2 py-4 border-2 rounded-xl md:w-[50%] bg-blue-200">
-                    <h2 class="font-extrabold underline">Quick Contact</h2>
-                    <form class="flex flex-col" action="sendmail.php" method="post">
-                        <label class="font-semibold mt-3" for="">Name : <input class=" border-1 rounded-md outline-none" type="text" name="name" id="name"  style="width:250px;"/></label>
-                        <label class="font-semibold mt-3" for="">Contact No : <input class=" inline border-1 rounded-md outline-none" type="number" name="name" id="name"  style="width:250px;"/></label>
-                        <label class="font-semibold mt-3" for="">Email id : <input class=" border-1 rounded-md outline-none" type="text" name="name" id="name"  style="width:250px;"/></label>
-                        <label class="font-semibold mt-3" for="">Enquery<textarea class=" border-1 rounded-md outline-none" name="enquery" cols="30" rows="5" id="enquery"></textarea></label>
+                <div class="mt-6 p-10 md:p-14 shadow-lg py-4 border-2 rounded-xl my-5 md:w-[50%] bg-blue-200">
+                    <h2 class="font-extrabold underline -ml-5 mb-5">Quick Contact</h2>
+                    <form id="contact-form" class="flex flex-col space-y-4">
+                        <label class="font-semibold md:flex justify-start items-center gap-5" for="">Your Name : <input class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" type="text" placeholder="Your Name" name="name" id="name"  style="width:250px;"/></label>
+                        <label class="font-semibold md:flex justify-start items-center gap-4" for="">Contact No :<input class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" type="number" placeholder="Your Contact No" name="contact" id="number"  style="width:250px;"/></label>
+                        <label class="font-semibold md:flex justify-start items-center gap-10" for="">Email id : <input class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" type="email" placeholder="Your Email" name="email" id="email"  style="width:250px;"/></label>
+                        <label class="font-semibold" for="">Enquiry :<textarea class="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-200" placeholder="Type your question here...." cols="30" rows="5" name="message" id="enquery"></textarea></label>
                
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="text-center border rounded-xl mx-20 my-3 py-3 bg-green-500 text-white">Submit</button>
+                        <p id="response" class="text-center"></p>
+
                     </form>
                 </div>
             </div>
@@ -93,6 +96,7 @@
             <p>Developed by : <a href="http://www.subhamburman.in/">Subham Burman</a></p>
         </div>
      </footer>
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
      <script src="script.js"></script>
 </body>
 </html>
